@@ -26,8 +26,12 @@ String Manipulation Algorithms -
 
 https://www.udemy.com/cart/subscribe/course/3084216/
 https://medium.com/the-andela-way/system-design-in-software-development-f360ce6fcbb9
+https://www.tutorialspoint.com/system_analysis_and_design/system_design.htm
 
-# Object Oriented
+
+# Computer science basic
+ - Threading (multi threading)
+ - Object Oriented
 
 # Design Patterns
 The first part covers behavioural design patterns:
@@ -53,8 +57,6 @@ Facade Pattern -
 Flyweight Pattern - 
 Proxy Pattern - 
 
-# Threading (multi threading)
-
-# Computer science basic
-
-# https://hr.gmu.edu/forms/employment/InterviewQuestionsSample.pdf
+# AOB
+https://www.humanresourcesblog.in/2019/12/01/hr-interview-questions-and-answers-on-drive-for-results/
+https://hr.gmu.edu/forms/employment/InterviewQuestionsSample.pdf
