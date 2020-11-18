@@ -25,6 +25,7 @@ String Manipulation Algorithms -
 # System Designs
 
 https://www.udemy.com/cart/subscribe/course/3084216/
+https://medium.com/the-andela-way/system-design-in-software-development-f360ce6fcbb9
 
 # Object Oriented
 
