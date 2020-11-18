@@ -1,4 +1,3 @@
-# codewithmosh-ds-algorithm-java
 # Data structure and algoriths
 
 The first part is all about linear data structures and their algorithms:
@@ -23,6 +22,10 @@ Searching Algorithms -
 Sorting Algorithms - 
 String Manipulation Algorithms - 
 
+# System Designs
+
+# Object Oriented
+
 # Design Patterns
 The first part covers behavioural design patterns:
 
@@ -46,10 +49,6 @@ Decorator Pattern -
 Facade Pattern - 
 Flyweight Pattern - 
 Proxy Pattern - 
-
-# System Designs
-
-# Object Oriented
 
 # Threading (multi threading)
 
