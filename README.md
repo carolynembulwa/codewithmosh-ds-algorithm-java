@@ -1,4 +1,4 @@
-# Data structure and algoriths
+# Data structure and algorithms
 
 The first part is all about linear data structures and their algorithms:
 
