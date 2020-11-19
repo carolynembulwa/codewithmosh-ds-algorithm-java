@@ -17,7 +17,7 @@ public class Array {
         items[count++] = item;
 
     }
-    
+
     public void insertAt(int item, int index){
         //O(n): Because we have to iterate over
         if(index < 0 || index >= count){

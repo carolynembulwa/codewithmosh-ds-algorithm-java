@@ -6,7 +6,8 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-	// Start Array
+	    // Start Array
+        /*
         Array numbers = new Array(3);
         numbers.insert(1);
         numbers.insert(20);
@@ -37,6 +38,36 @@ public class Main {
 
         //search
         list.contains(1);
+
+         */
         // end Array
+
+        //start linkedlist
+
+       // java.util.LinkedList  test =  new java.util.LinkedList<>();
+        //test.addFirst(1);
+
+
+        LinkedList list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.removeFirst();
+        list.removeLast();
+        list.addLast(80);
+        System.out.println(list.indexOf(10));
+        System.out.println(list.contains(10));
+        System.out.println(list.contains(90));
+        System.out.println(list.size());
+        /*list.addFirst(6);
+        list.removeFirst();
+        list.removeLast();
+
+        System.out.println(list.contains(10));
+        System.out.println(list.indexOf(10));*/
+
+
+
+        //end linklist
     }
 }
