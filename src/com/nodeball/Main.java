@@ -7,11 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
 	// Start Array
-
-        // search by index  o(1)
-        //search by value o(n)
-        //insert o(n)
-        //delete 0(n)
         Array numbers = new Array(3);
         numbers.insert(1);
         numbers.insert(20);
@@ -22,6 +17,7 @@ public class Main {
         System.out.println(numbers.searchArray(20));
         System.out.println(numbers.largestNumber());
         numbers.print();
+        System.out.println("reverse");
         numbers.reverse();
 
 
