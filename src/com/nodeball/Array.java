@@ -127,5 +127,48 @@ public class Array {
         }
     }
 
+    //1. Question:​ Find the median of two sorted arrays. eg.
+    //arra1 = [1.3,4]
+    //arr2 = [2,4,6]
+    //medium(arr1,arr2) = 3.5
+
+
+
+    //2. Question:​ Given an unsorted array, find the length of the
+    // longest sequence of consecutive numbers in the array.
+
+    //consecutive([​4​, ​2​, ​1​, ​6​, ​5​]) = ​3​, [​4​, ​5​, ​6​]
+    // consecutive([​5​, ​5​, ​3​, ​1​]) = ​1​, [​1​], [​3​], or [​5​]
+
+
+    //3. Merge K Arrays
+    //Question:​ Given k sorted arrays,
+    // merge them into a single sorted array.
+    // merge({{​1​, ​4​, ​7​},{​2​, ​5​, ​8​},{​3​, ​6​, ​9​}}) = {​1​, ​2​, ​3​, ​4​, ​5​, ​6​, ​7​, ​8​, ​9​}
+
+
+    //4. Merge Arrays
+    //Question:​ Given 2 sorted arrays, A and B,
+    // where A is long enough to hold the contents of A and B,
+    // write a function to copy the contents of B into A without
+    // using any buffer or additional memory.
+    //eg.
+    //A = {​1​,​3​,​5​,​0​,​0​,​0​} B = {​2​,​4​,​6​} mergeArrays(A, B) A = {​1​,​2​,​3​,​4​,​5​,​6​}
+
+
+    //5. Question:​ Given an array, write a function to find any subarray that sums to zero, if one exists.
+    //eg.
+    //    zeroSum({​1​, ​2​, ​-5​, ​1​, ​2​, ​-1​}) = [​2​, ​-5​, ​1​, ​2​]
+
+
+    //6. Question:​ Given an array of integers where each
+    // value 1 <= x <= len(array), write a function that
+    // finds all the duplicates in the array.
+    //eg.
+    //dups([​1​, ​2​, ​3​]) = []
+    //dups([​1​, ​2​, ​2​]) = [2]
+    //dups([​3​, ​3​, ​3​]) []3
+    //dups([​2​, ​1​, ​2​, ​1​]) = [​1​, ​2​]
+
 }
 

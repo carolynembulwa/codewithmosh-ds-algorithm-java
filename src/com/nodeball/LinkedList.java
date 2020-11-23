@@ -135,5 +135,90 @@ public class LinkedList {
         return array;
     }
 
+    public void reverseInPlace() {
+        //Reverse a linkedist in place
+        //input    [10 -> 20 -> 30]
+        //out put [10 <- 20 <- 30]
+        if(isEmpty()){
+            return;
+        }
+        Node current = first.next;
+        Node previous = first;
+        while(current != null){
+            Node next = current.next;
+            current.next = previous;
+            previous =  current;
+            current = next;
+        }
+
+        last = first;
+        last.next = null;
+        first = previous;
+
+    }
+
+    public void getKthFromTheEnd(int kth){
+        //find the Kth Node from the end of a linkedlist in one pass
+        int k = kth;
+
+        // [10 -> 20 -> 30 -> 40 -> 50 ]
+        //               *          *
+        //  k = 1 ( 50)
+        //  k = 2 ( 40)
+        //  k = 3 ( 30) ( distance of our pointer is 2)
+        //  k = 4 ( 20)
+        //  k = 5 ( 10)
+
+        //check if it is empty
+        if (isEmpty()) {
+            return;
+        }
+
+        Node current  = first;
+
+
+
+    }
+
+    public void reverse(){
+        //Given a linked list, write a function that prints
+        // the nodes of the list in reverse order.
+
+
+    }
+
+   // 1.Question:​ Given a linked list, determine whether
+    // it contains a cycle.
+
+    //2. Dedup Linked List
+    //Question:​ Given an unsorted linked list, write a function to remove all the duplicates. eg.
+    //dedup(​1​ -> ​2​ -> ​3​ -> ​2​ -> ​1​) = ​1​ -> ​2​ -> ​3
+
+    //3 Given a linked list, write a function
+    // to split the list into two equal halves. eg.
+    //divide(​1​ -> ​2​ -> ​3​ -> ​4​) = ​1​ -> ​2​, ​3​ -> ​4
+    //divide(​1​ -> ​2​ -> ​3​ -> ​4​ -> ​5​) = ​1​ -> ​2​ -> ​3​, ​4​ -> ​5
+
+    //4.Nth to the Last Element
+    //Question:​ Given a linked list, and an input n, write a function
+    // that returns the nth-to-last element of the linked list.
+    //e.g
+
+    //list​ = ​1​ -> ​2​ -> ​3​
+    // nthToLast(​list​, ​0​)  = 5
+    // nthToLast(​list​, ​1​)  = 4
+    // nthToLast(​list​, ​4​) = 1
+    // nthToLast(​list​, ​5​) = null
+
+    //5. 39. Random Linked List
+    //Question:​ Given a linked list where each node has
+    // two pointers, one to the next node
+    // and one to a random node in the list, clone the linked list.
+    //e,g
+
+    //  1​ -> ​2​ -> ​3​ -> ​4​ -> null
+    //  |    |    |    |
+    //  v    v    v    v
+    //  3​    ​1​    ​3​    ​2
 
 }
