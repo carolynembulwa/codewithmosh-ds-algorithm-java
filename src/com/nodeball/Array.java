@@ -127,11 +127,36 @@ public class Array {
         }
     }
 
-    //1. Question:​ Find the median of two sorted arrays. eg.
-    //arra1 = [1.3,4]
-    //arr2 = [2,4,6]
-    //medium(arr1,arr2) = 3.5
+    public int[] mediumSortedArray() {
+        //1. Question:​ Find the median of two sorted arrays. eg.
+        //arra1 = [1.3,4]
+        //arr2 = [2,4,6]
+        //medium(arr1,arr2) = 3.5
+        // are the array of same length??
+        //how are we dealing with info if we have 2 center elemnts
+        //are the arrays of interg;ers.
+        int[] arr1 = {1, 3, 5, 7};
+        int n1 = arr1.length;
 
+        int[] arr2 = {2, 4, 6, 8};
+        int n2 = arr2.length;
+        int[] arr3 = new int[n1 + n2];
+        int i = 0, j = 0 , k = 0;
+
+        while(i < n1 && j < n2){
+            if(arr1[i] < arr2[j]){
+                arr3[k++] = arr1[i++];
+            }
+            else{
+                arr3[k++] = arr2[j++];
+            }
+
+        }
+
+
+        return arr3;
+
+    }
 
 
     //2. Question:​ Given an unsorted array, find the length of the

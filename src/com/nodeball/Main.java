@@ -7,14 +7,17 @@ public class Main {
 
     public static void main(String[] args) {
 	    // Start Array
-        /*
-        Array numbers = new Array(3);
+
+        Array numbers = new Array(10);
+
         numbers.insert(1);
         numbers.insert(20);
         numbers.insert(10);
         numbers.insert(70);
-        //numbers.removeAt(1);
+        numbers.mediumSortedArray();
+
         numbers.insertAt(100,0);
+       /* //numbers.removeAt(1);
         System.out.println(numbers.searchArray(20));
         System.out.println(numbers.largestNumber());
         numbers.print();
