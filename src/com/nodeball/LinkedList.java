@@ -199,6 +199,10 @@ public class LinkedList {
     }
     public void middleInonePass(){
         //Floyd’s Cycle-finding Algorithm
+        //   Find the middle of a linked list in one pass.
+        //    // If the list has an even number of nodes, there would be two
+        //    // middle nodes. (Note: Assume that you don’t know the size of the
+        //    // list ahead of time
         if (isEmpty()) {
             throw new IllegalStateException();
         }
@@ -216,15 +220,29 @@ public class LinkedList {
          }
     }
 
-    //   Find the middle of a linked list in one pass.
-    //    // If the list has an even number of nodes, there would be two
-    //    // middle nodes. (Note: Assume that you don’t know the size of the
-    //    // list ahead of time
 
-    public void reverse(){
+    public Node reverse(Node node){
         // 1. Given a linked list, write a function that prints
         // the nodes of the list in reverse order.
+        //input    [10 -> 20 -> 30]
+        //out put [30 -> 20 -> 10]
 
+        if(isEmpty()){
+            throw  new IllegalArgumentException();
+        }
+        Node prev = null;
+        Node current = node;
+        Node next = null;
+
+        while(current != null){
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+
+        }
+        node = prev;
+        return node;
 
     }
 

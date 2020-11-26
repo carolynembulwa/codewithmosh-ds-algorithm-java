@@ -34,7 +34,7 @@ public class Array {
 
     private void resizeifRequired(){
         if(items.length == count){
-            //create new array  trice the original size
+            //create new array  twice the original size
             int[] newItems =  new int[count * 2];
 
             //copy array the existing items
@@ -127,38 +127,51 @@ public class Array {
         }
     }
 
-    public int[] mediumSortedArray() {
+    public double mediumSortedArray() {
         //1. Question:​ Find the median of two sorted arrays. eg.
         //arra1 = [1.3,4]
         //arr2 = [2,4,6]
         //medium(arr1,arr2) = 3.5
         // are the array of same length??
-        //how are we dealing with info if we have 2 center elemnts
-        //are the arrays of interg;ers.
-        int[] arr1 = {1, 3, 5, 7};
-        int n1 = arr1.length;
+        //how are we dealing with info if we have 2 center elemnts?
+        //are the arrays of intergers.
+        int[] a = {1, 3, 5, 7};
+        int n1 = a.length;
 
-        int[] arr2 = {2, 4, 6, 8};
-        int n2 = arr2.length;
+        int[] b = {2, 4, 6, 8};
+        int n2 = b.length;
         int[] arr3 = new int[n1 + n2];
-        int i = 0, j = 0 , k = 0;
 
-        while(i < n1 && j < n2){
-            if(arr1[i] < arr2[j]){
-                arr3[k++] = arr1[i++];
-            }
-            else{
-                arr3[k++] = arr2[j++];
-            }
+        int i = 0, j = 0, k = 0;
+        double medium;
 
+        while (i < a.length && j < b.length) {
+            arr3[k++] = a[i] < b[j] ? a[i++] : b[j++];
+        }
+
+        while (i < a.length) {
+            arr3[k++] = a[i++];
+        }
+
+        while (j < b.length) {
+            arr3[k++] = b[j++];
+        }
+
+        System.out.println(arr3);
+        int middleindex =  arr3.length / 2;
+        if ( arr3.length % 2 == 0 ){
+            medium = arr3[middleindex-1] + arr3[middleindex] / 2.0;
+        }else{
+            medium = arr3[middleindex+1];
         }
 
 
-        return arr3;
+        return medium;
 
     }
 
 
+    //2. Question:​ Given an unsorted array, find the length of the
     //2. Question:​ Given an unsorted array, find the length of the
     // longest sequence of consecutive numbers in the array.
 
